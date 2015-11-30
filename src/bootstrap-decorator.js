@@ -29,7 +29,7 @@ function(decoratorsProvider, sfBuilderProvider, sfPathProvider) {
   };
 
   var defaults = [sfField, ngModel, ngModelOptions, condition];
-  decoratorsProvider.defineDecorator('bootstrapDecorator', {
+  decoratorsProvider.defineDecorator('bootstrapReportDecorator', {
     textarea: {template: base + 'textarea.html', builder: defaults},
     fieldset: {template: base + 'fieldset.html', builder: [sfField, simpleTransclusion, condition]},
     array: {template: base + 'array.html', builder: [sfField, ngModelOptions, ngModel, array, condition]},
@@ -39,9 +39,11 @@ function(decoratorsProvider, sfBuilderProvider, sfPathProvider) {
     conditional: {template: base + 'section.html', builder: [sfField, simpleTransclusion, condition]},
     actions: {template: base + 'actions.html', builder: defaults},
     select: {template: base + 'select.html', builder: defaults},
+    strapselect: {template: base + 'strapselect.html', builder: defaults},
     checkbox: {template: base + 'checkbox.html', builder: defaults},
     checkboxes: {template: base + 'checkboxes.html', builder: [sfField, ngModelOptions, ngModel, array, condition]},
     number: {template: base + 'default.html', builder: defaults},
+    treeKm: {template: base + 'default.html', builder: defaults},
     password: {template: base + 'default.html', builder: defaults},
     submit: {template: base + 'submit.html', builder: defaults},
     button: {template: base + 'submit.html', builder: defaults},

@@ -7,14 +7,8 @@
          schema-validate="form"
          ng-show="showTitle()">{{form.title}}</label>
 
-  <div class="checkbox" ng-repeat="val in titleMapValues track by $index" >
-    <label>
-      <input type="checkbox"
-             ng-disabled="form.readonly"
-             sf-changed="form"
-             class="{{form.fieldHtmlClass}}"
-             ng-model="titleMapValues[$index]"
-             name="{{form.key.slice(-1)[0]}}">
+  <div ng-repeat="val in titleMapValues track by $index" >
+    <label ng-if="titleMapValues[$index]">
       <span ng-bind-html="form.titleMap[$index].name"></span>
     </label>
 
