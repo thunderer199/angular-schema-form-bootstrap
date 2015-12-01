@@ -3,7 +3,8 @@
   <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">
     {{form.title}}
   </label>
-  <select sf-field-model
+  <select ng-model="$$value$$"
+          ng-model-options="form.ngModelOptions"
           ng-disabled="form.readonly"
           sf-changed="form"
           class="form-control {{form.fieldHtmlClass}}"
