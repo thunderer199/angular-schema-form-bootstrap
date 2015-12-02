@@ -23,7 +23,9 @@
 </div>
 
 <div ng-if="form.readonly" ng-controller="dynamicSelectController" class="panel panel-default {{form.htmlClass}}">
-    <label class="panel-heading" ng-show="showTitle()">{{form.title}}</label>
+    <div class="panel-heading" ng-show="showTitle()">
+        <label>{{form.title}}</label>
+    </div>
 
     <div class="panel panel-body {{form.fieldHtmlClass}}" ng-init="populateTitleMap(form)">
         <div ng-if="(form.options.multiple == 'true') || (form.options.multiple == true)">
@@ -38,6 +40,6 @@
             </div>
         </div>
     </div>
-    <span ng-if="form.description" class="panel-footer">{{form.description}}</span>
+    <div ng-if="form.description" class="panel-footer">{{form.description}}</div>
 </div>
 
