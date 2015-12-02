@@ -1,23 +1,43 @@
-<div class="form-group {{form.htmlClass}} schema-form-select"
-     ng-class="{'has-error': form.disableErrorState !== true && hasError(), 'has-success': form.disableSuccessState !== true && hasSuccess(), 'has-feedback': form.feedback !== false}">
-    <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">
-        {{form.title}}
-    </label>
+<div ng-if="!form.readonly" ng-controller="dynamicSelectController" class="form-group {{form.htmlClass}}"
+     ng-class="{'has-error': hasError(), 'has-success': hasSuccess()}">
+    <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">{{form.title}}</label>
 
-    <div ng-if="form.options.multiple">
-
-        <div sf-field-model="replaceAll"></div>
-
-
-
+    <div class="form-group {{form.fieldHtmlClass}}" ng-init="populateTitleMap(form)">
+        <button ng-if="(form.options.multiple == 'true') || (form.options.multiple == true)"
+                type="button" class="btn btn-default" sf-changed="form" schema-validate="form" ng-model="$$value$$"
+                data-placeholder="{{form.placeholder || form.schema.placeholder || ('placeholders.select')}}"
+                data-html="1" data-multiple="1" data-max-length="{{form.options.inlineMaxLength}}"
+                data-max-length-html="{{form.options.inlineMaxLengthHtml}}"
+                bs-options="item.value as item.name for item in form.titleMap | selectFilter:this:$$value$$:&quot;$$value$$&quot;"
+                bs-select>
+        </button>
+        <button ng-if="!((form.options.multiple == 'true') || (form.options.multiple == true))"
+                type="button" class="btn btn-default" sf-changed="form" schema-validate="form" ng-model="$$value$$"
+                data-placeholder="{{form.placeholder || form.schema.placeholder || ('placeholders.select')}}"
+                data-html="1"
+                bs-options="item.value as item.name for item in form.titleMap | selectFilter:this:$$value$$:&quot;$$value$$&quot;"
+                bs-select>
+        </button>
+        <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || form.description}} </span>
     </div>
-    <div ng-if="!form.options.multiple">
-
-        <p sf-field-model="replaceAll" ng-bind="$$value$$"></p>
-
-    </div>
-
-
-
-    <div class="help-block" sf-message="form.description"></div>
 </div>
+
+<div ng-if="form.readonly" ng-controller="dynamicSelectController" class="panel panel-default {{form.htmlClass}}">
+    <label class="panel-heading" ng-show="showTitle()">{{form.title}}</label>
+
+    <div class="panel panel-body {{form.fieldHtmlClass}}" ng-init="populateTitleMap(form)">
+        <div ng-if="(form.options.multiple == 'true') || (form.options.multiple == true)">
+            <div ng-repeat="item in form.titleMap | filterMulti:$$value$$">
+                {{item.name}}
+            </div>
+        </div>
+
+        <div ng-if="!((form.options.multiple == 'true') || (form.options.multiple == true))">
+            <div ng-repeat="item in form.titleMap">
+                <div ng-if="item.value == $$value$$">{{item.name}}</div>
+            </div>
+        </div>
+    </div>
+    <span ng-if="form.description" class="panel-footer">{{form.description}}</span>
+</div>
+

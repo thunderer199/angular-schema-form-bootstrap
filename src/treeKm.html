@@ -1,0 +1,22 @@
+<div ng-if="!form.readonly" class="form-group" ng-class="{'has-error': hasError(), 'has-success': form.disableSuccessState !== true && hasSuccess()}" >
+    <label class="control-label" ng-show="showTitle()">{{form.title}}</label>
+
+    <km-tree-view km-data="form.options.data" hierarchy-key="{{form.options.hierarchyKey}}"
+                  km-url="{{form.options.dataUrl}}" expand-level="1" validation="true" placeholder=""
+                  selected-node="$$value$$" readonly="form.readonly" form="form"></km-tree-view>
+
+    <span class="help-block" sf-message="form.description"></span>
+</div>
+
+<div class="panel panel-default schema-form-{{form.type}} {{form.htmlClass}}" ng-if="form.readonly">
+    <div class="panel-heading">
+        <label ng-show="showTitle()">{{form.title}}</label>
+    </div>
+
+    <div class="panel-body" ng-bind="$$value$$"></div>
+
+    <div class="panel-footer" ng-if="form.feedback || form.description">
+        <span ng-if="form.feedback !== false" class="form-control-feedback" aria-hidden="true"></span>
+        <div class="help-block" sf-message="form.description"></div>
+    </div>
+</div>

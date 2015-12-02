@@ -14,8 +14,8 @@
          ng-repeat="tab in form.tabs"
          ng-show="selected.tab === $index"
          ng-class="{active: selected.tab === $index}">
-         <bootstrap-decorator ng-repeat="item in tab.items" form="item">
-         </bootstrap-decorator>
+         <sf-decorator ng-repeat="item in tab.items" form="item">
+         </sf-decorator>
     </div>
   </div>
 </div>

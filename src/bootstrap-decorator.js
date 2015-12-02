@@ -1,7 +1,7 @@
 angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(decoratorsProvider) {
   var base = 'decorators/bootstrap/';
 
-  decoratorsProvider.defineDecorator('bootstrapDecorator', {
+  decoratorsProvider.defineDecorator('bootstrapReportDecorator', {
     textarea: {template: base + 'textarea.html', replace: false},
     fieldset: {template: base + 'fieldset.html', replace: false},
     /*fieldset: {template: base + 'fieldset.html', replace: true, builder: function(args) {
@@ -28,6 +28,9 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     help: {template: base + 'help.html', replace: false},
     'default': {template: base + 'default.html', replace: false},
     'tabarray-inline': {template: base + 'tabarray-inline.html', replace: false},
+    treeKm: {template: base + 'treeKm.html', replace: false},
+    strapselect: {template: base + 'strapselect.html', replace: false}
+
   }, []);
 
   //manual use directives
@@ -53,9 +56,27 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
   return {
     transclude: true,
     scope: true,
-    templateUrl: 'directives/decorators/bootstrap/fieldset-trcl.html',
+    templateUrl: 'decorators/bootstrap/fieldset-trcl.html',
     link: function(scope, element, attrs) {
       scope.title = scope.$eval(attrs.title);
     }
   };
+}).filter('filterMulti', function () {
+  return function (input, arr) {
+    var filtered = [];
+
+    var arrLen = arr.length;
+    var inputLen = input.length;
+    var j;
+    for (var i = 0; i < arrLen; i++) {
+        for (j = 0; j < inputLen; j++) {
+            if (input[j].value === arr[i]) {
+                filtered.push(input[j]);
+                break;
+            }
+        }
+    }
+
+    return filtered;
+  }
 });
