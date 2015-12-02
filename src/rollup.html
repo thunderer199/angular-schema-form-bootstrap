@@ -1,0 +1,16 @@
+<fieldset ng-disabled="form.readonly" class="schema-form-fieldset {{form.htmlClass}}">
+  <div ng-click="form.hide_fieldset = !form.hide_fieldset">
+    <label class="control-label">
+        {{ form.title }}
+    </label>
+    <i class="pull-right glyphicon ng-scope" ng-class="{'glyphicon-chevron-down': form.hide_fieldset, 'glyphicon-chevron-right': !form.hide_fieldset}"></i>
+  </div>
+    <div ng-show="!form.hide_fieldset" style="border-top: 1px solid #ddd; margin-bottom: 20px;"></div>
+  
+  <div class="help-block" ng-show="form.description" ng-bind-html="form.description"></div>
+  <ol  ng-show="form.hide_fieldset" class="list-group">
+    <li class="list-group-item {{form.fieldHtmlClass}}">
+        <sf-decorator ng-repeat="item in form.items" form="item"></sf-decorator>
+    </li>
+  </ol>
+</fieldset>
