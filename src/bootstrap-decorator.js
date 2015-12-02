@@ -26,7 +26,8 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     'radios-inline': {template: base + 'radios-inline.html', replace: false},
     radiobuttons: {template: base + 'radio-buttons.html', replace: false},
     help: {template: base + 'help.html', replace: false},
-    'default': {template: base + 'default.html', replace: false}
+    'default': {template: base + 'default.html', replace: false},
+    'tabarray-inline': {template: base + 'tabarray-inline.html', replace: false},
   }, []);
 
   //manual use directives
@@ -45,8 +46,7 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     input: base + 'default.html',
     radios: base + 'radios.html',
     'radios-inline': base + 'radios-inline.html',
-    radiobuttons: base + 'radio-buttons.html',
-    treeKm: base + 'radio-buttons.html'
+    radiobuttons: base + 'radio-buttons.html'
   });
 
 }]).directive('sfFieldset', function() {

@@ -1,5 +1,5 @@
 <div sf-array="form" class="schema-form-array {{form.htmlClass}}"
-     ng-if="!form.readonly"
+     ng-if="form.readonly"
      ng-model="$$value$$" ng-model-options="form.ngModelOptions">
   <label class="control-label" ng-show="showTitle()">{{ form.title }}</label>
   <ol class="list-group" ng-model="modelArray" ui-sortable>
@@ -12,7 +12,7 @@
 
 
 <div sf-array="form" class="schema-form-array {{form.htmlClass}}"
-     ng-if="form.readonly"
+     ng-if="!form.readonly"
      ng-model="$$value$$" ng-model-options="form.ngModelOptions">
   <label class="control-label" ng-show="showTitle()">{{ form.title }}</label>
   <ol class="list-group" ng-model="modelArray" ui-sortable>
