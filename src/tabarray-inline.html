@@ -29,13 +29,13 @@
                 <sf-decorator ng-init="arrayIndex = $index" form="copyWithIndex($index)"></sf-decorator>
 
 
-                <!-- button ng-hide="form.readonly"
+                <button ng-hide="form.readonly"
                         ng-click="selected.tab = deleteFromArray($index).length - 1"
                         type="button"
                         class="btn {{ form.style.remove || 'btn-default' }} pull-right">
-                  <i class="glyphicon glyphicon-trash"></i>
-                  {{ form.remove || 'Remove'}}
-                </button -->
+                    <i class="glyphicon glyphicon-trash"></i>
+                    {{ form.remove || 'Remove'}}
+                </button>
             </div>
         </div>
     </div>
@@ -94,15 +94,13 @@
                  ng-show="selected.tab === $index"
                  ng-class="{active: selected.tab === $index}">
                 <sf-decorator ng-init="arrayIndex = $index" form="copyWithIndex($index)"></sf-decorator>
-
-
-                <!-- button ng-hide="form.readonly"
+                <button ng-hide="form.readonly"
                         ng-click="selected.tab = deleteFromArray($index).length - 1"
                         type="button"
                         class="btn {{ form.style.remove || 'btn-default' }} pull-right">
-                  <i class="glyphicon glyphicon-trash"></i>
-                  {{ form.remove || 'Remove'}}
-                </button -->
+                    <i class="glyphicon glyphicon-trash"></i>
+                    {{ form.remove || 'Remove'}}
+                </button>
             </div>
         </div>
     </div>
