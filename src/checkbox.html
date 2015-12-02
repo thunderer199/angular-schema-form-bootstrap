@@ -4,7 +4,8 @@
     <input type="checkbox"
            sf-changed="form"
            ng-disabled="form.readonly"
-           sf-field-model
+           ng-model="$$value$$"
+           ng-model-options="form.ngModelOptions"
            schema-validate="form"
            class="{{form.fieldHtmlClass}}"
            name="{{form.key.slice(-1)[0]}}">
