@@ -30,7 +30,8 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     'tabarray-inline': {template: base + 'tabarray-inline.html', replace: false},
     treeKm: {template: base + 'treeKm.html', replace: false},
     strapselect: {template: base + 'strapselect.html', replace: false},
-    rollup: {template: base + 'rollup.html', replace: false}
+    rollup: {template: base + 'rollup.html', replace: false},
+    imageUrl: {template: base + 'image-url.html', replace: false}
   }, []);
 
   //manual use directives
