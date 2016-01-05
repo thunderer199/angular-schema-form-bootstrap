@@ -5,10 +5,10 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     textarea: {template: base + 'textarea.html', replace: false},
     fieldset: {template: base + 'fieldset.html', replace: false},
     /*fieldset: {template: base + 'fieldset.html', replace: true, builder: function(args) {
-      var children = args.build(args.form.items, args.path + '.items');
-      console.log('fieldset children frag', children.childNodes)
-      args.fieldFrag.childNode.appendChild(children);
-    }},*/
+     var children = args.build(args.form.items, args.path + '.items');
+     console.log('fieldset children frag', children.childNodes)
+     args.fieldFrag.childNode.appendChild(children);
+     }},*/
     array: {template: base + 'array.html', replace: false},
     tabarray: {template: base + 'tabarray.html', replace: false},
     tabs: {template: base + 'tabs.html', replace: false},
@@ -62,22 +62,48 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
       scope.title = scope.$eval(attrs.title);
     }
   };
-}).filter('filterMulti', function () {
-  return function (input, arr) {
+}).filter('filterMulti', function() {
+  return function(input, arr) {
     var filtered = [];
+
+    if (!angular.isArray(arr)) {
+      arr = [arr];
+    }
 
     var arrLen = arr.length;
     var inputLen = input.length;
     var j;
     for (var i = 0; i < arrLen; i++) {
-        for (j = 0; j < inputLen; j++) {
-            if (input[j].value === arr[i]) {
-                filtered.push(input[j]);
-                break;
-            }
+      for (j = 0; j < inputLen; j++) {
+        if (input[j].value === arr[i]) {
+          filtered.push(input[j]);
         }
+      }
     }
 
     return filtered;
-  }
+  };
+}).filter('emptyArray', function() {
+  return function(input) {
+    if (!input || !angular.isObject(input)) {
+      return input;
+    }
+
+    function isEmpty(e) {
+      if (!e) {
+        return false;
+      }
+      if (angular.isArray(e) || angular.isString(e)) {
+        return e.length > 0;
+      }
+      if (angular.isObject(e)) {
+        return Object.keys(e).length > 0;
+      }
+
+      return true;
+
+    }
+
+    return input.some(isEmpty) ? input : [];
+  };
 });

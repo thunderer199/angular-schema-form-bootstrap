@@ -8,7 +8,7 @@
     <span class="help-block" sf-message="form.description"></span>
 </div>
 
-<div class="panel panel-default schema-form-{{form.type}} {{form.htmlClass}}" ng-if="form.readonly">
+<div ng-if="form.readonly && $$value$$ && $$value$$.length > 0" class="panel panel-default schema-form-{{form.type}} {{form.htmlClass}}">
     <div class="panel-heading">
         <label ng-show="showTitle()">{{form.title}}</label>
     </div>
