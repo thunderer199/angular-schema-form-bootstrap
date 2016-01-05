@@ -1,10 +1,6 @@
 <div ng-if="form.readonly"
      class="form-group panel panel-default {{form.htmlClass}}">
 
-  <pre>{{form.titleMap | json}}</pre>
-  <pre>{{form.titleMap | emptyArray | json}}</pre>
-  <pre>{{$$value$$ | json}}</pre>
-
     <div class="panel-heading">
         <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">{{form.title}}</label>
     </div>
