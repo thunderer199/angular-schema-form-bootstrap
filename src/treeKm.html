@@ -13,10 +13,16 @@
         <label ng-show="showTitle()">{{form.title}}</label>
     </div>
 
-    <div class="panel-body" ng-bind="$$value$$"></div>
+    <div class="panel-body">
+      <span ng-bind="$$value$$"></span>
+      <button ng-if="form.description" class="btn btn-default pull-right"
+              ng-click="tab.show_index = !tab.show_index ? $index : tab.show_index !== $index ? $index : null">
+        <i class="glyphicon glyphicon-question-sign"></i>
+      </button>
+    </div>
 
-    <div class="panel-footer" ng-if="form.feedback || form.description">
+    <div class="panel-footer" ng-if="form.feedback || (form.description && $index === tab.show_index)">
         <span ng-if="form.feedback !== false" class="form-control-feedback" aria-hidden="true"></span>
-        <div class="help-block" sf-message="form.description"></div>
+        <div ng-show="$index === tab.show_index" class="help-block" sf-message="form.description"></div>
     </div>
 </div>
