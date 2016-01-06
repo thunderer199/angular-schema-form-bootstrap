@@ -1,7 +1,6 @@
-<div ng-init="selected = { tab: 0 }" class="schema-form-tabs {{form.htmlClass}}">
+<div ng-if="!form.readonly" ng-init="selected = { tab: 0 }" class="schema-form-tabs {{form.htmlClass}}">
   <ul class="nav nav-tabs">
     <li ng-repeat="tab in form.tabs"
-        ng-disabled="form.readonly"
         ng-click="$event.preventDefault() || (selected.tab = $index)"
         ng-class="{active: selected.tab === $index}">
         <a href="#">{{ tab.title }}</a>
@@ -10,12 +9,19 @@
 
   <div class="tab-content {{form.fieldHtmlClass}}">
     <div class="tab-pane"
-         ng-disabled="form.readonly"
          ng-repeat="tab in form.tabs"
          ng-show="selected.tab === $index"
          ng-class="{active: selected.tab === $index}">
-         <sf-decorator ng-repeat="item in tab.items" form="item">
-         </sf-decorator>
+
+        <sf-decorator ng-repeat="item in tab.items" form="item"></sf-decorator>
+
     </div>
   </div>
+</div>
+
+<div ng-if="form.readonly" class="schema-form-tabs {{form.htmlClass}}">
+<div ng-repeat="tab in form.tabs">
+        <h1>{{tab.title}}</h1>
+        <sf-decorator ng-repeat="item in tab.items" form="item"></sf-decorator>
+    </div>
 </div>
