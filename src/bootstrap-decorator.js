@@ -62,14 +62,16 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     templateUrl: 'decorators/bootstrap/fieldset-trcl.html',
     link: function(scope, element, attrs) {
       scope.title = scope.$eval(attrs.title);
+
+    },
+    controller: function () {
       // The function for adding image.
       $scope.dishImages = [];
 
-
-// Handler for click "addImage" Button
+      // Handler for click "addImage" Button
       $scope.addImage = function () {
         var modalInstance = $modal.open({
-          templateUrl: '/templates/dialog/cut-image.html',
+          template: 'cutImage',
           controller: 'CutImageCtrl',
           size: '',
           resolve: {
@@ -86,20 +88,6 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
         }, function() {
           //error message should be here.
         });
-      };
-
-      $scope.removeImage = function (index) {
-        //$scope.dishImages.splice(index, 1);
-        if($scope.dish.images[index] === $scope.dish.defaultImage) {
-          //if default image is removed we will select first image as default image.
-          if($scope.dish.images.length > 1) {
-            $scope.dish.defaultImage = $scope.dish.images[0];
-          } else {
-            $scope.dish.defaultImage = "";
-          }
-        }
-        $scope.dish.images.splice(index, 1);
-        $scope.updateImageList();
       };
     }
   };

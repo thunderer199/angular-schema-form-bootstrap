@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac1b59e5-c7cb-46f4-84bf-6b50754045e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log.3050442853" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-decorator.js" afterPath="$PROJECT_DIR$/bootstrap-decorator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-decorator.min.js" afterPath="$PROJECT_DIR$/bootstrap-decorator.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bootstrap-decorator.js" afterPath="$PROJECT_DIR$/src/bootstrap-decorator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image-url.html" afterPath="$PROJECT_DIR$/src/image-url.html" />
     </list>
     <ignored path="angular-schema-form-bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +32,8 @@
       <file leaf-file-name="bootstrap-decorator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bootstrap-decorator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2142">
-              <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+            <state relative-caret-position="630">
+              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -44,30 +42,20 @@
       <file leaf-file-name="bootstrap-decorator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap-decorator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3675">
-              <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="95" column="21" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="21" />
               <folding>
-                <marker date="1474887030047" expanded="true" signature="1950:1982" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="2055:2062" ph="×" />
-                <marker date="1474887030047" expanded="true" signature="2248:2262" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="7464:7486" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="7605:7620" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="8550:8572" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="8691:8706" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="15727:15741" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="17254:17268" ph="..." />
-                <marker date="1474887030047" expanded="true" signature="19734:19782" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="1950:1982" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="2055:2062" ph="×" />
+                <marker date="1474889894875" expanded="true" signature="2248:2262" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="7464:7486" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="7605:7620" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="8550:8572" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="8691:8706" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="15727:15741" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="17254:17268" ph="..." />
+                <marker date="1474889894875" expanded="true" signature="19734:19782" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap-decorator.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap-decorator.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -75,8 +63,8 @@
       <file leaf-file-name="image-url.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/image-url.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-414">
-              <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+            <state relative-caret-position="147">
+              <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
               <folding>
                 <element signature="e#3041#3047#1" expanded="true" />
               </folding>
@@ -84,21 +72,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/array.html">
+      <file leaf-file-name="cut-image.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cut-image.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="714">
+              <caret line="34" column="122" selection-start-line="34" selection-start-column="122" selection-end-line="34" selection-end-column="122" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".jscsrc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.jscsrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,11 +112,11 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/array.html" />
-        <option value="$PROJECT_DIR$/src/image-url.html" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/image-url.html" />
         <option value="$PROJECT_DIR$/bootstrap-decorator.js" />
         <option value="$PROJECT_DIR$/src/bootstrap-decorator.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -364,18 +362,18 @@
       <updated>1474543876233</updated>
       <workItem from="1474543877697" duration="7140000" />
       <workItem from="1474621874260" duration="10983000" />
-      <workItem from="1474647604922" duration="7678000" />
+      <workItem from="1474647604922" duration="10809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25801000" />
+    <option name="totallyTimeSpent" value="28932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22631261" sideWeight="0.37259343" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22631261" sideWeight="0.37259343" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22631261" sideWeight="0.6274066" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -521,21 +519,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/radio-buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.jscsrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -577,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/bootstrap-example.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -596,6 +573,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -638,40 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/image-url.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
-          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-          <folding>
-            <element signature="e#3041#3047#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/array.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -688,10 +632,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bootstrap-decorator.js">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        <state relative-caret-position="105">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image-url.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+          <folding>
+            <element signature="e#3041#3047#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cut-image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="122" selection-start-line="34" selection-start-column="122" selection-end-line="34" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -704,21 +698,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.jscsrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootstrap-decorator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-decorator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3675">
-          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="95" column="21" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="21" />
           <folding>
-            <marker date="1474887030047" expanded="true" signature="1950:1982" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="2055:2062" ph="×" />
-            <marker date="1474887030047" expanded="true" signature="2248:2262" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="7464:7486" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="7605:7620" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="8550:8572" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="8691:8706" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="15727:15741" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="17254:17268" ph="..." />
-            <marker date="1474887030047" expanded="true" signature="19734:19782" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="1950:1982" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="2055:2062" ph="×" />
+            <marker date="1474889894875" expanded="true" signature="2248:2262" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="7464:7486" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="7605:7620" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="8550:8572" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="8691:8706" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="15727:15741" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="17254:17268" ph="..." />
+            <marker date="1474889894875" expanded="true" signature="19734:19782" ph="..." />
           </folding>
         </state>
       </provider>
