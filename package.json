@@ -4,7 +4,8 @@
   "description": "Bootstrap 3 decorator for Angular Schema Form",
   "main": "bootstrap-decorator.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
   },
   "keywords": [
     "angular-schema-form-decorator"
@@ -22,6 +23,7 @@
     "gulp-uglify": "^1.2.0",
     "gulp-umd": "^0.2.0",
     "gulp-watch": "^4.2.4",
+    "lite-server": "^2.2.2",
     "streamqueue": "^0.1.3"
   }
 }
