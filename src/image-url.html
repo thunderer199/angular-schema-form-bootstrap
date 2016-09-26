@@ -58,7 +58,6 @@
     <img class="img-thumbnail" ng-show="form.key" ng-src="{{$$value$$}}" alt="" width="{{form.preview.width}}"
          height="{{form.preview.height}}">
 
-
     <button class="btn btn-default" ng-click="addImage();" ng-show="!readOnly">
       <i class="glyphicon glyphicon-plus-sign"></i>&nbsp;<span>Add image</span>
     </button>
@@ -87,15 +86,17 @@
             <button class="btn btn-default" ng-if="hasSuccess() && form.feedback !== false" disabled="disabled">
                 <i class="glyphicon glyphicon-ok" style="color: #3c763d;"></i>
             </button>
+
             <button ng-if="form.description" class="btn btn-default"
                     ng-click="tab.show_index = !tab.show_index ? $index : tab.show_index !== $index ? $index : null">
                 <i class="glyphicon glyphicon-question-sign"></i>
             </button>
+
+
         </span>
 
         <img class="img-thumbnail" ng-show="form.key" ng-src="{{$$value$$}}" alt="" width="{{form.preview.width}}"
              height="{{form.preview.height}}">
-
 
     <span ng-if="form.fieldAddonRight"
           class="input-group-addon"
