@@ -95,7 +95,7 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
       // Handler for click "addImage" Button
       $scope.addImage = function () {
         var modalInstance = $modal.open({
-          templateUrl: 'image-url.html',
+          template: 'cutImage',
           controller: 'CutImageCtrl',
           size: '',
           resolve: {
