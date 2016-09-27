@@ -58,10 +58,9 @@
     <!--<img class="img-thumbnail" ng-show="form.key" ng-src="{{$$value$$}}" alt="" width="{{form.preview.width}}"-->
          <!--height="{{form.preview.height}}">-->
 
-    <button class="btn btn-default" ng-click="$ctrl.open()">
+    <button class="btn btn-default" ng-click="addImage();" ng-show="!readOnly">
       <i class="glyphicon glyphicon-plus-sign"></i>&nbsp;<span>Add image</span>
     </button>
-
 
     <div ng-if="form.fieldAddonLeft || form.fieldAddonRight"
          ng-class="{'input-group': (form.fieldAddonLeft || form.fieldAddonRight)}">
