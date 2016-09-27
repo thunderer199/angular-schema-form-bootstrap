@@ -15,8 +15,38 @@
       The form is <em ng-show="theForm.$pristine">pristine</em><em ng-show="theForm.$dirty">dirty</em>
       and <em ng-show="theForm.$valid">valid</em><em ng-show="!theForm.$valid">invalid</em>.
     </div>
+
     <div>{{prettyModel}}</div>
   </form>
+
+  <div ng-controller="ModalDemoCtrl as $ctrl">
+    <script type="text/ng-template" id="myModalContent.html">
+
+      <style>
+
+      </style>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <ul>
+          <li ng-repeat="item in $ctrl.items">
+            <a href="#" ng-click="$event.preventDefault(); $ctrl.selected.item = item">{{ item }}</a>
+          </li>
+        </ul>
+        Selected: <b>{{ $ctrl.selected.item }}</b>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+      </div>
+    </script>
+
+    <div class="container">
+      <button type="button" class="btn btn-default" ng-click="$ctrl.open()">Open me!</button>
+    </div>
+
+  </div>
 
   <script type="text/javascript" src="../bower_components/tv4/tv4.js"></script>
   <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
@@ -26,9 +56,12 @@
 
   <script type="text/javascript" src="../bower_components/angular-schema-form/dist/schema-form.js"></script>
   <script type="text/javascript" src="../bootstrap-decorator.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.4.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+  <script src="modal.app.js"></script>
 
     <script>
-      angular.module('test', ['schemaForm']).controller('TestCtrl', function($scope, $q, $timeout) {
+      angular.module('test', ['schemaForm', 'ngAnimate', 'ngSanitize', 'ui.bootstrap']).controller('TestCtrl', function($scope, $q, $timeout) {
 
         $scope.schema = {
             "type": "object",
@@ -103,6 +136,11 @@
               "type": "submit",
         	    "style": "btn-info",
               "title": "OK"
+            },
+            {
+              "type": "submit",
+              "style": "btn-info",
+              "title": "Add img"
             }
           ];
 

@@ -63,32 +63,6 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     link: function(scope, element, attrs) {
       scope.title = scope.$eval(attrs.title);
 
-    },
-    controller: function () {
-      // The function for adding image.
-      $scope.dishImages = [];
-
-      // Handler for click "addImage" Button
-      $scope.addImage = function () {
-        var modalInstance = $modal.open({
-          template: 'cutImage',
-          controller: 'CutImageCtrl',
-          size: '',
-          resolve: {
-            options: function () {
-              return {
-                title: i18n.t('view.dishEdit.selectImage')
-              };
-            }
-          }
-        });
-        modalInstance.result.then(function(croppedImage) {
-          $scope.onFileSelect([croppedImage.image], croppedImage.fileName);
-
-        }, function() {
-          //error message should be here.
-        });
-      };
     }
   };
 }).filter('filterMulti', function() {
